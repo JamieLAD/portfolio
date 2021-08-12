@@ -1,0 +1,26 @@
+.title, .subtitle {
+  color: map-get(map-get($colours, text), dark);
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+
+.title {
+  font-size: 11rem;
+  font-weight: 500;
+  letter-spacing: -.35rem;
+
+  &-line {
+    display: block;
+    margin-bottom: 6rem;
+
+    &:last-of-type {
+      margin-left: 36rem;
+      margin-bottom: 0px;
+    }
+  }
+}

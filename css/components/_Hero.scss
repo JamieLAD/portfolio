@@ -1,0 +1,107 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+
+  .container {
+    position: relative;
+  }
+}
+
+.titles {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+$icon-dimension: 8rem;
+
+.circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  animation: levitate 2s ease-in-out infinite alternate;
+  transform: translateX(-50%) translateY(-50%);
+
+  &::before {
+    content: "";
+    background-color: transparent;
+    border: 1px solid map-get(map-get($colours, utils), border);
+    border-radius: 100%;
+    pointer-events: none;
+    position: absolute;
+    transition: $transition;
+  }
+
+  &:hover {
+
+    .circle-icon {
+      height: calc(#{$icon-dimension} * 1.5);
+      width: calc(#{$icon-dimension} * 1.5);
+    }
+
+    &::before {
+      height: calc(#{$icon-dimension} * 2.5);
+      width: calc(#{$icon-dimension} * 2.5);
+    }
+  }
+}
+
+.circle-icon {
+  width: #{$icon-dimension};
+  height: #{$icon-dimension};
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+}
+
+.circle-github {
+  left: calc(50% + 20rem);
+  top: -5rem;
+  animation-delay: -1333ms;
+
+  &::before {
+    width: 80rem;
+    height: 80rem;
+  }
+
+  .circle-icon {
+    background-color: rgba(map-get(map-get($colours, icons), github), .10);
+  }
+}
+
+.circle-linkedin {
+  left: 0;
+  top: calc(100% + 5rem);
+  animation-delay: -666ms;
+
+  &::before {
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .circle-icon {
+    background-color: rgba(map-get(map-get($colours, icons), linkedin), .10);
+  }
+}
+
+.circle-gmail {
+  left: calc(100% - 12rem);
+  top: calc(100% - 4rem);
+
+  &::before {
+    width: 40rem;
+    height: 40rem;
+  }
+
+
+  .circle-icon {
+    background-color: rgba(map-get(map-get($colours, icons), gmail), .10);
+  }
+}

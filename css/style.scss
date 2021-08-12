@@ -1,0 +1,20 @@
+//Import Theme File Including Variables etc
+@import './utils/Theme';
+
+//Import Normalisation Styles
+@import './utils/Normalise';
+
+//Import Grid System
+@import './utils/Grid';
+
+//Import Heading Styles
+@import './utils/Headings';
+
+//Import Animation Helpers
+@import './utils/Animations';
+
+//Import Hero Section Styles
+@import './components/Header';
+
+//Import Hero Section Styles
+@import './components/Hero';

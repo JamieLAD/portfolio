@@ -1,0 +1,48 @@
+$colours: (
+
+  brand: (
+    green: #5E8B6F,
+    lightgreen: #A8E6CF,
+    blue: #B0DEDB,
+    lightblue: #E3F3F7
+  ),
+
+  text: (
+    dark: #111111,
+    light: #444444
+  ),
+
+  utils: (
+    lightgrey: #CCCCCC,
+    white: #FFFFFF,
+    offwhite: #F7F8FB,
+    border: #eee
+  ),
+
+  icons: (
+    github: #6E5494,
+    linkedin: #007AB9,
+    gmail: #F44336
+  )
+
+);
+
+$typography: (
+
+  main: 'Manrope',
+  fallback: sans-serif
+
+);
+
+$breakpoints: (
+
+  xs: 350px,
+  sm: 475px,
+  md: 768px,
+  lg: 1080px,
+  xl: 1440px
+
+);
+
+$transition: .3s cubic-bezier(.23,1,.32,1);
+$border-radius: 8px;
