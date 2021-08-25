@@ -1,4 +1,4 @@
-.title, .subtitle {
+.title, .subtitle, .section-title {
   color: map-get(map-get($colours, text), dark);
   line-height: 1;
 }
@@ -12,7 +12,7 @@
 .title {
   font-size: 11rem;
   font-weight: 500;
-  letter-spacing: -.35rem;
+  letter-spacing: -3.5px;
 
   &-line {
     display: block;
@@ -20,6 +20,23 @@
 
     &:last-of-type {
       margin-left: 36rem;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.section-title {
+  font-size: 7.2rem;
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: normal;
+  
+  &-line {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    &:last-of-type {
+      margin-left: 8rem;
       margin-bottom: 0px;
     }
   }

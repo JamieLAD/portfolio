@@ -1,0 +1,71 @@
+.about {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-item {
+    position: absolute;
+
+    &:nth-of-type(1) {
+      top: 0;
+      left: 0;      
+    }
+
+    &:nth-of-type(2) {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);      
+    }
+
+    &:nth-of-type(3) {
+      bottom: 0;
+      left: 4rem;      
+    }
+  }
+
+  &-content {
+    padding: 12rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-summary {
+    font-size: 4rem;
+    text-align: center;
+    max-width: 20ch;
+    color: map-get(map-get($colours, text), dark);
+    margin-bottom: 12rem;
+  }
+
+  &-circle {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get(map-get($colours, brand), green);
+    color: map-get(map-get($colours, utils), white);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: normal;
+    border-radius: 50%;
+    transition: $transition;
+
+    &:hover {
+      transform: rotate(-20deg);
+    }
+  }
+
+  &-text {
+    width: 100%;
+    text-align: center;
+  }
+}

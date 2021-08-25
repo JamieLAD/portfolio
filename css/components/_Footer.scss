@@ -1,0 +1,19 @@
+.footer {
+  background-color: map-get(map-get($colours, utils), offwhite);
+  padding: 12rem 0;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-of-type {
+      padding-bottom: 10rem;
+      border-bottom: 1px solid map-get(map-get($colours, utils), lightgrey);
+    }
+
+    &:last-of-type {
+      padding-top: 10rem;
+    }
+  }
+}

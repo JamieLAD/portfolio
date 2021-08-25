@@ -13,8 +13,26 @@
 //Import Animation Helpers
 @import './utils/Animations';
 
+//Import Link Circle Section Styles
+@import './components/LinkCircle';
+
+//Import Card Styles
+@import './components/Card';
+
 //Import Hero Section Styles
 @import './components/Header';
 
 //Import Hero Section Styles
 @import './components/Hero';
+
+//Import Projects Section Styles
+@import './components/Projects';
+
+//Import About Section Styles
+@import './components/About';
+
+//Import Works Section Styles
+@import './components/Works';
+
+//Import Footer Section Styles
+@import './components/Footer';
