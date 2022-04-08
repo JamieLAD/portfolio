@@ -1,57 +1,29 @@
-.works {
-  padding: 12rem 0;
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-  }
-
-  .row {
-    display: flex;
-    align-items: flex-start;
-    justify-items: space-between;
-    margin-bottom: 12rem;
-  }
-
-  &-intro {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  &-sticky {
-    position: sticky;
-    top: 3rem;
-  }
-}
-
 .work {
   display: block;
   padding-top: 5rem;
   padding-bottom: 5rem;
   border-bottom: 1px solid map-get(map-get($colours, utils), lightgrey);
 
-  &-title {
+  &__title {
     font-size: 3.6rem;
     line-height: 1;
     color: map-get(map-get($colours, text), dark);
   }
 
-  &-content {
+  &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.4rem;
   }
 
-  &-tags {
+  &__tags {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
 
-  &-tag {
+  &__tag {
     color: map-get(map-get($colours, text), light);
     display: inline-flex;
     align-items: center;
@@ -75,7 +47,7 @@
     }
   }
 
-  &-arr {
+  &__arr {
     width: 5.4rem;
     height: 5.4rem;
     display: flex;
@@ -95,7 +67,7 @@
     }
   }
 
-  &-icon {
+  &__icon {
     width: 3.4rem;
     height: 2.8rem;
     color: map-get(map-get($colours, text), dark);
@@ -104,7 +76,7 @@
 
   &:hover {
 
-    .work-arr {
+    .work__arr {
 
       &::before {
         height: 100%;
@@ -112,7 +84,7 @@
       }
     }
 
-    .work-icon {
+    .work__icon {
       transform: rotate(-45deg);
       color: map-get(map-get($colours, utils), white);
     }

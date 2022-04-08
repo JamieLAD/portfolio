@@ -23,12 +23,12 @@
 
   <header class="header">
     <div class="container">
-      <a href="./index.html" class="navigation__link active-link cursor-hide">Home</a>
+      <a href="./index.html" class="navigation__link">Home</a>
       <nav class="navigation">
         <ul class="navigation__menu">
-          <li class="navigation__item cursor-hide"><a href="./playground.html" class="navigation__link">Playground</a></li>
-          <li class="navigation__item cursor-hide"><a href="./about.html" class="navigation__link">About Me</a></li>
-          <li class="navigation__item cursor-hide">
+          <li class="navigation__item"><a href="./playground.html" class="navigation__link active-link">Playground</a></li>
+          <li class="navigation__item"><a href="./about.html" class="navigation__link">About Me</a></li>
+          <li class="navigation__item">
             <a href="" class="navigation__link">Connect <ion-icon class="nav-icon" name="caret-down-outline"></ion-icon></a>
             <div class="navigation__dropdown">
               <div class="navigation__dropdown-inner">
@@ -52,123 +52,84 @@
     </div>
   </header>
   
-  <section class="hero">
+  <section class="hero hero-alt">
     <div class="container">
-      <div class="titles">
-        <h6 class="subtitle">Jamie Tooth</h6>
-        <h1 class="title">
-          <span class="title__line">App & Web Designer</span>
-          <span class="title__line">Web Developer</span>
-        </h1>
-      </div>
-      <div class="circle-buttons">
-        <a href="#" class="circle-button circle-github cursor-hide">
-          <div class="circle-icon"><img src="./assets/icons/github.svg" alt="Github Icon" /></div>
-        </a>
-        <a href="#" class="circle-button circle-linkedin cursor-hide">
-          <div class="circle-icon"><img src="./assets/icons/linkedin.svg" alt="Linkedin Icon" /></div>
-        </a>
-        <a href="#" class="circle-button circle-gmail cursor-hide">
-          <div class="circle-icon"><img src="./assets/icons/gmail.svg" alt="Gmail Icon" /></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="container">
-      <h2 class="section-title">
-        <span class="section-title__line">Selected</span>
-        <span class="section-title__line">Projects</span>
-      </h2>
-      <div class="row align-end">
-        <a href="#" class="card cursor-launch" id="navigation-inn">
-          <img src="./assets/img/navigation-inn.jpg" alt="" class="card__image" />
-          <div class="card__inner">
-            <div class="card__content">
-              <h3 class="card__title">The Navigation Inn</h3>
-              <div class="card__arr">
-                <ion-icon class="card__icon" name="arrow-forward-outline"></ion-icon>
-              </div>
-            </div>
-            <div class="card__tags">
-              <span class="card__tag">Website</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card cursor-launch" id="aquasports">
-          <img src="./assets/img/aquasports.jpg" alt="" class="card__image" />
-          <div class="card__inner">
-            <div class="card__content">
-              <h3 class="card__title">Aquasports HQ</h3>
-              <div class="card__arr">
-                <ion-icon class="card__icon" name="arrow-forward-outline"></ion-icon>
-              </div>
-            </div>
-            <div class="card__tags">
-              <span class="card__tag">Website</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="row align-start">
-        <a href="#" class="card cursor-launch" id="airbnb-clone">
-          <img src="./assets/img/airbnb.jpg" alt="" class="card__image" />
-          <div class="card__inner">
-            <div class="card__content">
-              <h3 class="card__title">Airbnb Clone</h3>
-              <div class="card__arr">
-                <ion-icon class="card__icon" name="arrow-forward-outline"></ion-icon>
-              </div>
-            </div>
-            <div class="card__tags">
-              <span class="card__tag">Website</span>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card cursor-launch" id="uikit">
-          <img src="./assets/img/uikit.jpg" alt="Food Ordering App" class="card__image" />
-          <div class="card__inner">
-            <div class="card__content">
-              <h3 class="card__title">Personal UI Kit</h3>
-              <div class="card__arr">
-                <ion-icon class="card__icon" name="arrow-forward-outline"></ion-icon>
-              </div>
-            </div>
-            <div class="card__tags">
-              <span class="card__tag">UI/UX Design</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="passion">
-    <div class="container">
-      <div class="passion__items">
-        <img class="passion__item" src="./assets/img/about-item-1.jpg" alt="" />
-        <img class="passion__item" src="./assets/img/about-item-2.jpg" alt="" />
-        <img class="passion__item" src="./assets/img/about-item-3.jpg" alt="" />
-      </div>
-      <div class="passion__content">
-        <p class="passion__summary">I have a passion for designing and creating apps and websites.</p>
-        <a class="link-circle" href="./about.html">
-          About me
-        </a>
-      </div>
-    </div>
+      <h1 class="title">Playground</h1>
+      <p class="summary">A collection of the various designs and coding projects that I have completed and consider to be my best bits of work.</p>
   </section>
 
   <section class="works">
     <div class="container">
       <div class="row space-between">
-        <h2 class="section-title sticky">
-          <span class="section-title__line">More</span>
-          <span class="section-title__line">Works</span>
-        </h2>
         <div class="works__container">
-          <p class="works__intro">More of my design work is on platforms such as dribbble, behance and codepen.</p>
+          <div class="works__items">
+            <a class="work cursor-image" href="#" id="ordingo" data-image-hover="uikit">
+              <div class="work__content">
+                <div class="work__title">Ordingo</div>
+                <div class="work__arr">
+                  <ion-icon class="work__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="work__tags">
+                <span class="work__tag">Website</span>
+                <span class="work__tag">UI/UX</span>
+                <span class="work__tag">Figma</span>
+              </div>
+            </a>
+            <a class="work cursor-image" href="#" id="the-ship-inn" data-image-hover="uikit">
+              <div class="work__content">
+                <div class="work__title">The Ship Inn</div>
+                <div class="work__arr">
+                  <ion-icon class="work__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="work__tags">
+                <span class="work__tag">App</span>
+                <span class="work__tag">Figma</span>
+              </div>
+            </a>
+            <a class="work cursor-image" href="#" id="insiet" data-image-hover="uikit">
+              <div class="work__content">
+                <div class="work__title">Insiet</div>
+                <div class="work__arr">
+                  <ion-icon class="work__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="work__tags">
+                <span class="work__tag">Email</span>
+                <span class="work__tag">Figma</span>
+                <span class="work__tag">HTML/CSS</span>
+              </div>
+            </a>
+            <a class="work cursor-image" href="#" id="kkitchen" data-image-hover="uikit">
+              <div class="work__content">
+                <div class="work__title">KKitchen</div>
+                <div class="work__arr">
+                  <ion-icon class="work__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="work__tags">
+                <span class="work__tag">Website</span>
+                <span class="work__tag">App</span>
+                <span class="work__tag">Figma</span>
+              </div>
+            </a>
+            <a class="work cursor-image" href="#" id="pizza-at-bb" data-image-hover="uikit">
+              <div class="work__content">
+                <div class="work__title">Pizza @ Bearded Brewery</div>
+                <div class="work__arr">
+                  <ion-icon class="work__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="work__tags">
+                <span class="work__tag">Website</span>
+                <span class="work__tag">App</span>
+                <span class="work__tag">Figma</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="works__container">
           <div class="works__items">
             <a class="work cursor-image" href="#" id="ordingo" data-image-hover="uikit">
               <div class="work__content">
@@ -237,9 +198,6 @@
           </div>
         </div>
       </div>
-      <a class="link-circle" href="./playground.html">
-        Playground
-      </a>
     </div>
   </section>
 

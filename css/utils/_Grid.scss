@@ -12,10 +12,19 @@
 }
 
 .row {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 8rem;
+
+  &.align-end {
+    align-items: flex-end;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
 }
 
 @each $breakpoint, $size in $breakpoints {

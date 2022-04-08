@@ -1,0 +1,23 @@
+.works {
+  padding-block: 12rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    margin-bottom: 12rem;
+  }
+
+  &__intro {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    width: 50%;
+  }
+}

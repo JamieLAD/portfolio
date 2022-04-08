@@ -1,0 +1,93 @@
+.navigation {
+
+   &__menu {
+      display: flex;
+      gap: 5rem;
+   }
+
+   &__link {
+      color: map-get(map-get($colours, text), dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      transition: $transition;
+      position: relative;
+
+      &.active-link {
+
+         &::before {
+            content: "";
+            width: .6rem;
+            height: .6rem;
+            border-radius: 50%;
+            background-color: map-get(map-get($colours, brand), green);
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
+
+      &:hover {
+         opacity: .6;
+      }
+   }
+
+   &__item {
+      position: relative;
+      padding-block: 1rem;
+
+      > .navigation__dropdown {
+         position: absolute;
+         top: 100%;
+         overflow: hidden;
+         max-height: 0px;
+         transition: $transition;
+
+         .navigation__dropdown-inner {
+            background-color: map-get(map-get($colours, utils), white);
+            border: 1px solid map-get(map-get($colours, utils), border);
+            padding: 1rem;
+            border-radius: $border-radius;
+         }
+
+         .navigation__link {
+            width: 16rem;
+            padding: 1rem;
+            border-radius: $border-radius;
+
+            &:hover {
+               opacity: 1;
+            }
+            
+            &.github {
+      
+               &:hover {
+                  background-color: rgba(map-get(map-get($colours, icons), github), .10);
+               }
+            }
+      
+            &.linkedin {
+            
+               &:hover {
+                  background-color: rgba(map-get(map-get($colours, icons), linkedin), .10);
+               }
+            }
+      
+            &.gmail {
+            
+               &:hover {
+                  background-color: rgba(map-get(map-get($colours, icons), gmail), .10);
+               }
+            }
+         }
+      }
+
+      &:hover {
+
+         > .navigation__dropdown {
+            max-height: 25rem;
+         }
+      }
+   }
+}

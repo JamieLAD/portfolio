@@ -14,7 +14,7 @@
   font-weight: 500;
   letter-spacing: -3.5px;
 
-  &-line {
+  &__line {
     display: block;
     margin-bottom: 6rem;
 
@@ -25,13 +25,29 @@
   }
 }
 
+.summary, .description {
+  color: map-get(map-get($colours, text), dark);
+  max-width: 50%;
+}
+
+.summary {
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-top: 3rem;
+}
+
 .section-title {
   font-size: 7.2rem;
   line-height: 1;
   letter-spacing: -2px;
   font-weight: normal;
   
-  &-line {
+  &__line {
     display: block;
     margin-bottom: 1.5rem;
 
@@ -39,5 +55,10 @@
       margin-left: 8rem;
       margin-bottom: 0px;
     }
+  }
+
+  &.sticky {
+    position: sticky;
+    top: 3rem;
   }
 }

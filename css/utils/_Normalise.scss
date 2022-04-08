@@ -17,4 +17,5 @@ body {
   line-height: 1.5;
   color: map-get(map-get($colours, text), light);
   font-family: map-get($typography, main), map-get($typography, fallback);
+  overflow-x: hidden;
 }

@@ -1,4 +1,4 @@
-.about {
+.passion {
   padding-top: 12rem;
   padding-bottom: 12rem;
 
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  &-item {
+  &__item {
     position: absolute;
 
     &:nth-of-type(1) {
@@ -29,7 +29,7 @@
     }
   }
 
-  &-content {
+  &__content {
     padding: 12rem 0;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     align-items: center;
   }
 
-  &-summary {
+  &__summary {
     font-size: 4rem;
     text-align: center;
     max-width: 20ch;
@@ -45,7 +45,7 @@
     margin-bottom: 12rem;
   }
 
-  &-circle {
+  &__circle {
     width: 18rem;
     height: 18rem;
     display: flex;
@@ -64,7 +64,7 @@
     }
   }
 
-  &-text {
+  &__text {
     width: 100%;
     text-align: center;
   }

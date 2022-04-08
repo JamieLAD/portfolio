@@ -13,26 +13,44 @@
 //Import Animation Helpers
 @import './utils/Animations';
 
+//Import Cursor Styles
+@import './utils/Cursors';
+
+//Import Navigation Styles
+@import './components/Navigation';
+
 //Import Link Circle Section Styles
 @import './components/LinkCircle';
 
 //Import Card Styles
 @import './components/Card';
 
-//Import Hero Section Styles
-@import './components/Header';
+//Import Work Styles
+@import './components/Work';
 
 //Import Hero Section Styles
-@import './components/Hero';
+@import './blocks/Header';
+
+//Import Hero Section Styles
+@import './blocks/Hero';
 
 //Import Projects Section Styles
-@import './components/Projects';
+@import './blocks/Projects';
 
-//Import About Section Styles
-@import './components/About';
+//Import Passion Section Styles
+@import './blocks/Passion';
 
 //Import Works Section Styles
-@import './components/Works';
+@import './blocks/Works';
+
+//Import About Section Styles
+@import './blocks/About';
+
+//Import Techs Section Styles
+@import './blocks/Techs';
+
+//Import Favourites Section Styles
+@import './blocks/Favourites';
 
 //Import Footer Section Styles
-@import './components/Footer';
+@import './blocks/Footer';

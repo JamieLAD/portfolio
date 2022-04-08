@@ -1,0 +1,23 @@
+.techs {
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-block: 12rem;
+    border-bottom: 2px solid map-get(map-get($colours, utils), lightgrey);
+  }
+
+  &__container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10rem;
+    row-gap: 3rem;
+  }
+
+  &__item {
+    font-size: 2rem;
+  }
+}

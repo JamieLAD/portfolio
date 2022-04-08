@@ -1,0 +1,19 @@
+.projects {
+  background-color: map-get(map-get($colours, utils), offwhite);
+  padding-block: 12rem;
+
+  .section-title {
+    margin-bottom: -10rem;
+  }
+
+  .row {
+    
+    &:first-of-type {
+      margin-bottom: 8rem;
+    }
+  }
+
+  #navigation-inn {
+    margin-top: 25rem;
+  }
+}
